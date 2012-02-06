@@ -27,9 +27,13 @@
 #include <stdint.h>
 #include <stdio.h>
 
-#define CBSM_HEADER_MAGIC 0xdeed
-#define CBSM_OBJECT_MAGIC 0xdeadbeef
+#define CBSM_HEADER_MAGIC 	0xdeed
+#define CBSM_OBJECT_MAGIC 	0xdeadbeef
 
+#define CBSM_FILE_SCHEMATIC	0x00
+#define CBSM_FILE_LAYOUT	0x01
+#define CBSM_FILE_LIBRARY	0x02
+#define CBSM_FILE_TYPE_MASK	(0xff)
 
 /* Header format and related functions */
 struct cbsm_version {

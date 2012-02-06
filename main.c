@@ -6,7 +6,8 @@ void gen()
 {
 	FILE *f = fopen(TEST_FILE, "w");
 	struct cbsm_line *l;
-	struct cbsm_header *head = cbsm_header_create(0, 1, 0);
+	struct cbsm_header *head = cbsm_header_create(0, 1,
+		CBSM_FILE_SCHEMATIC);
 
 	printf("Created header:\n");
 	cbsm_header_write(f, head);
